@@ -1,0 +1,32 @@
+{
+  "name": "solid-spinner",
+  "version": "0.1.0",
+  "description": "Loading spinners for SolidJS",
+  "main": "index.js",
+  "scripts": {
+    "test": "vitest"
+  },
+  "keywords": [
+    "solid",
+    "spinner",
+    "loading",
+    "svg"
+  ],
+  "author": "Leonard Kioi",
+  "license": "ISC",
+  "peerDependencies": {
+    "solid-js": "*"
+  },
+  "devDependencies": {
+    "jsdom": "^20.0.3",
+    "solid-js": "latest",
+    "solid-testing-library": "^0.5.0",
+    "typescript": "^4.9.3",
+    "vite": "^3.2.4",
+    "vite-plugin-solid": "^2.4.0",
+    "vitest": "^0.25.3"
+  },
+  "engines": {
+    "node": ">=16"
+  }
+}
