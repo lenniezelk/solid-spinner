@@ -1,21 +1,22 @@
-import { JSX } from 'solid-js';
+import { Component, JSX, mergeProps } from 'solid-js';
 import { SpinnerProps } from '../types';
 
-const AudioSpinner = ({
-  width = 55,
-  height = 80,
-  className = '',
-}: SpinnerProps): JSX.Element => {
+const AudioSpinner: Component<SpinnerProps> = (
+  props: SpinnerProps,
+): JSX.Element => {
+  const mergedProps = mergeProps(props);
+
   return (
     <svg
-      width={width}
-      height={height}
-      viewBox={`0 0 ${width} ${height}`}
+      viewBox="0 0 55 80"
       xmlns="http://www.w3.org/2000/svg"
       fill="currentColor"
-      class={className}
       data-test-name="audio"
       role="img"
+      {...mergedProps}
+      width={mergedProps.width || 55}
+      height={mergedProps.height || 80}
+      class={mergedProps.class || ''}
     >
       <g transform="matrix(1 0 0 -1 0 80)">
         <rect width="10" height="20" rx="3">

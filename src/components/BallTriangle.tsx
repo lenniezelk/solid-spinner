@@ -1,21 +1,20 @@
-import { JSX } from 'solid-js';
+import { JSX, mergeProps } from 'solid-js';
 import { SpinnerProps } from '../types';
 
-const BallTriangle = ({
-  width = 57,
-  height = 57,
-  className = '',
-}: SpinnerProps): JSX.Element => {
+const BallTriangle = (props: SpinnerProps): JSX.Element => {
+  const mergedProps = mergeProps(props);
+
   return (
     <svg
-      width={width}
-      height={height}
-      viewBox={`0 0 ${width} ${height}`}
+      viewBox="0 0 57 57"
       xmlns="http://www.w3.org/2000/svg"
-      stroke="currentColor"
-      class={className}
+      fill="currentColor"
       data-test-name="ball-triangle"
       role="img"
+      {...mergedProps}
+      width={mergedProps.width || 57}
+      height={mergedProps.height || 57}
+      class={mergedProps.class || ''}
     >
       <g fill="none" fill-rule="evenodd">
         <g transform="translate(1 1)" stroke-width="2">

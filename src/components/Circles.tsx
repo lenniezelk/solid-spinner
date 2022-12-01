@@ -1,21 +1,20 @@
-import { JSX } from 'solid-js';
+import { Component, JSX, mergeProps } from 'solid-js';
 import { SpinnerProps } from '../types';
 
-const Circles = ({
-  width = 135,
-  height = 135,
-  className = '',
-}: SpinnerProps): JSX.Element => {
+const Circles: Component<SpinnerProps> = (props: SpinnerProps): JSX.Element => {
+  const mergedProps = mergeProps(props);
+
   return (
     <svg
-      width={width}
-      height={height}
-      viewBox={`0 0 ${width} ${height}`}
+      viewBox="0 0 135 135"
       xmlns="http://www.w3.org/2000/svg"
       fill="currentColor"
-      class={className}
       data-test-name="circles"
       role="img"
+      {...mergedProps}
+      width={mergedProps.width || 135}
+      height={mergedProps.height || 135}
+      class={mergedProps.class || ''}
     >
       <path d="M67.447 58c5.523 0 10-4.477 10-10s-4.477-10-10-10-10 4.477-10 10 4.477 10 10 10zm9.448 9.447c0 5.523 4.477 10 10 10 5.522 0 10-4.477 10-10s-4.478-10-10-10c-5.523 0-10 4.477-10 10zm-9.448 9.448c-5.523 0-10 4.477-10 10 0 5.522 4.477 10 10 10s10-4.478 10-10c0-5.523-4.477-10-10-10zM58 67.447c0-5.523-4.477-10-10-10s-10 4.477-10 10 4.477 10 10 10 10-4.477 10-10z">
         <animateTransform

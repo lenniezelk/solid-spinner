@@ -1,43 +1,20 @@
+import { Component, Match, mergeProps, Switch } from 'solid-js';
 import { JSX } from 'solid-js/jsx-runtime';
+import { SpinnerProps, SpinnerType } from '../types';
 import AudioSpinner from './AudioSpinner';
 import BallTriangle from './BallTriangle';
-import { SpinnerProps, SpinnerType } from '../types';
-import { Match, Switch } from 'solid-js';
 import Circles from './Circles';
 
-const Spinner = ({
-  type = SpinnerType.circles,
-  width,
-  height,
-  className,
-  style,
-}: SpinnerProps): JSX.Element => {
+const Spinner: Component<SpinnerProps> = (props: SpinnerProps): JSX.Element => {
+  const mergedProps = mergeProps(props);
+
   return (
-    <Switch
-      fallback={
-        <Circles
-          width={width}
-          height={height}
-          className={className}
-          style={style}
-        />
-      }
-    >
-      <Match when={type === SpinnerType.audio}>
-        <AudioSpinner
-          width={width}
-          height={height}
-          className={className}
-          style={style}
-        />
+    <Switch fallback={<Circles {...mergedProps} />}>
+      <Match when={mergedProps.type === SpinnerType.audio}>
+        <AudioSpinner {...mergedProps} />
       </Match>
-      <Match when={type === SpinnerType.ballTriangle}>
-        <BallTriangle
-          width={width}
-          height={height}
-          className={className}
-          style={style}
-        />
+      <Match when={mergedProps.type === SpinnerType.ballTriangle}>
+        <BallTriangle {...mergedProps} />
       </Match>
     </Switch>
   );

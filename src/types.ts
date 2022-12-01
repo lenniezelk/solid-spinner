@@ -1,12 +1,12 @@
 import { JSX } from 'solid-js';
 
-export interface SpinnerProps {
+export type SpinnerProps = {
   width?: string | number;
   height?: string | number;
   type?: SpinnerType;
-  className?: string;
+  class?: string;
   style?: JSX.CSSProperties;
-}
+};
 
 export enum SpinnerType {
   audio = 'audio',

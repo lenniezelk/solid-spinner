@@ -8,41 +8,50 @@ describe('<Spinner />', () => {
 
   describe('<Circles />', () => {
     test('default params', async () => {
-      // default
-      // assemble
+      // arrange
       render(() => <Spinner />);
-      const svg = await screen.findByRole('img');
 
       // act
-
-      // assert
+      const svg = await screen.findByRole('img');
       let width = svg.getAttribute('width');
       let height = svg.getAttribute('height');
       let class_ = svg.getAttribute('class');
       let viewBox = svg.getAttribute('viewBox');
+      let testName = svg.getAttribute('data-test-name');
+
+      // assert
       expect(width).toBe('135');
       expect(height).toBe('135');
       expect(class_).toBe('');
       expect(viewBox).toBe('0 0 135 135');
+      expect(testName).toBe('circles');
     });
 
     test('change params', async () => {
-      // default
-      // assemble
-      render(() => <Spinner width={50} height="60" className="spinner" />);
-      const svg = await screen.findByRole('img');
+      // arrange
+      render(() => (
+        <Spinner
+          width={50}
+          height="60"
+          class="spinner"
+          style={{ margin: '10px' }}
+        />
+      ));
 
       // act
-
-      // assert
+      const svg = await screen.findByRole('img');
       let width = svg.getAttribute('width');
       let height = svg.getAttribute('height');
       let viewBox = svg.getAttribute('viewBox');
       let class_ = svg.getAttribute('class');
+      let style = svg.getAttribute('style');
+
+      // assert
       expect(width).toBe('50');
       expect(height).toBe('60');
-      expect(viewBox).toBe('0 0 50 60');
+      expect(viewBox).toBe('0 0 135 135');
       expect(class_).toBe('spinner');
+      expect(style).toBe('margin: 10px;');
     });
   });
 });
