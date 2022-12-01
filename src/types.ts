@@ -12,4 +12,5 @@ export enum SpinnerType {
   audio = 'audio',
   ballTriangle = 'ballTriangle',
   circles = 'circles',
+  bars = 'bars',
 }
