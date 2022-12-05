@@ -1,13 +1,13 @@
 import { afterEach, describe, expect, test } from 'vitest';
-import { render, fireEvent, screen, cleanup } from 'solid-testing-library';
+import { render, screen, cleanup } from 'solid-testing-library';
 import Spinner from '../Spinner';
 import { SpinnerType } from '../../types';
 
-describe('<Bars />', () => {
+describe('<Oval />', () => {
   afterEach(cleanup);
   test('default params', async () => {
     // arrange
-    render(() => <Spinner type={SpinnerType.bars} />);
+    render(() => <Spinner type={SpinnerType.oval} />);
 
     // act
     const svg = await screen.findByRole('img');
@@ -18,11 +18,11 @@ describe('<Bars />', () => {
     let testName = svg.getAttribute('data-test-name');
 
     // assert
-    expect(width).toBe('135');
-    expect(height).toBe('140');
+    expect(width).toBe('38');
+    expect(height).toBe('38');
     expect(class_).toBe('');
-    expect(viewBox).toBe('0 0 135 140');
-    expect(testName).toBe('bars');
+    expect(viewBox).toBe('0 0 38 38');
+    expect(testName).toBe('oval');
   });
 
   test('change params', async () => {
@@ -33,7 +33,7 @@ describe('<Bars />', () => {
         height="60"
         class="spinner"
         style={{ margin: '10px' }}
-        type={SpinnerType.bars}
+        type={SpinnerType.oval}
       />
     ));
 
@@ -48,7 +48,7 @@ describe('<Bars />', () => {
     // assert
     expect(width).toBe('50');
     expect(height).toBe('60');
-    expect(viewBox).toBe('0 0 135 140');
+    expect(viewBox).toBe('0 0 38 38');
     expect(class_).toBe('spinner');
     expect(style).toBe('margin: 10px;');
   });
