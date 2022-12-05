@@ -6,3 +6,6 @@ export * from './components/Bars';
 export * from './components/Circles';
 export * from './components/Grid';
 export * from './components/Hearts';
+export * from './components/Oval';
+export * from './components/Puff';
+export * from './components/Rings';
