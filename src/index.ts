@@ -9,3 +9,4 @@ export * from './components/Hearts';
 export * from './components/Oval';
 export * from './components/Puff';
 export * from './components/Rings';
+export * from './components/SpinningCircles';
