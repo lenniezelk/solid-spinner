@@ -11,3 +11,4 @@ export * from './components/Puff';
 export * from './components/Rings';
 export * from './components/SpinningCircles';
 export * from './components/TailSpin';
+export * from './components/ThreeDots';

@@ -20,4 +20,5 @@ export enum SpinnerType {
   rings = 'rings',
   tailSpin = 'tailSpin',
   spinningCircles = 'spinningCircles',
+  threeDots = 'threeDots',
 }
