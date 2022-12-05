@@ -1,3 +1,3 @@
-# Solid Spinner
+# [WIP] Solid Spinner
 
-Pure SVG spinners for [SolidJS](https://solidjs.com) projects.
+Dependency free [SolidJS](https://solidjs.com) adaptation of Sam Herberts [SVG Loaders](https://github.com/SamHerbert/SVG-Loaders) library.
