@@ -4,6 +4,7 @@ import { SpinnerProps, SpinnerType } from '../types';
 import AudioSpinner from './AudioSpinner';
 import BallTriangle from './BallTriangle';
 import Circles from './Circles';
+import Grid from './Grid';
 
 const Spinner: Component<SpinnerProps> = (props: SpinnerProps): JSX.Element => {
   const mergedProps = mergeProps(props);
@@ -15,6 +16,9 @@ const Spinner: Component<SpinnerProps> = (props: SpinnerProps): JSX.Element => {
       </Match>
       <Match when={mergedProps.type === SpinnerType.ballTriangle}>
         <BallTriangle {...mergedProps} />
+      </Match>
+      <Match when={mergedProps.type === SpinnerType.grid}>
+        <Grid {...mergedProps} />
       </Match>
     </Switch>
   );

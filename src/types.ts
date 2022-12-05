@@ -13,4 +13,5 @@ export enum SpinnerType {
   ballTriangle = 'ballTriangle',
   circles = 'circles',
   bars = 'bars',
+  grid = 'grid',
 }
