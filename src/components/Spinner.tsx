@@ -9,6 +9,7 @@ import Grid from './Grid';
 import Hearts from './Hearts';
 import Oval from './Oval';
 import Puff from './Puff';
+import Rings from './Rings';
 
 const Spinner: Component<SpinnerProps> = (props: SpinnerProps): JSX.Element => {
   const mergedProps = mergeProps(props);
@@ -35,6 +36,9 @@ const Spinner: Component<SpinnerProps> = (props: SpinnerProps): JSX.Element => {
       </Match>
       <Match when={mergedProps.type === SpinnerType.puff}>
         <Puff {...mergedProps} />
+      </Match>
+      <Match when={mergedProps.type === SpinnerType.rings}>
+        <Rings {...mergedProps} />
       </Match>
     </Switch>
   );
