@@ -16,4 +16,5 @@ export enum SpinnerType {
   grid = 'grid',
   hearts = 'hearts',
   oval = 'oval',
+  puff = 'puff',
 }
