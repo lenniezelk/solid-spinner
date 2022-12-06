@@ -1,7 +1,9 @@
 import { Component, JSX, mergeProps } from 'solid-js';
 import { SpinnerProps } from '../types';
 
-const Circles: Component<SpinnerProps> = (props: SpinnerProps): JSX.Element => {
+export const Circles: Component<SpinnerProps> = (
+  props: SpinnerProps,
+): JSX.Element => {
   const mergedProps = mergeProps(props);
 
   return (
@@ -39,5 +41,3 @@ const Circles: Component<SpinnerProps> = (props: SpinnerProps): JSX.Element => {
     </svg>
   );
 };
-
-export default Circles;

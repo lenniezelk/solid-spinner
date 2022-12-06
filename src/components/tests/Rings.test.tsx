@@ -1,6 +1,6 @@
 import { afterEach, describe, expect, test } from 'vitest';
 import { render, screen, cleanup } from 'solid-testing-library';
-import Spinner from '../Spinner';
+import { Spinner } from '../Spinner';
 import { SpinnerType } from '../../types';
 
 describe('<Rings />', () => {

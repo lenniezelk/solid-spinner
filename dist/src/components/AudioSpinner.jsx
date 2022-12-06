@@ -1,5 +1,6 @@
 "use strict";
 Object.defineProperty(exports, "__esModule", { value: true });
+exports.AudioSpinner = void 0;
 const solid_js_1 = require("solid-js");
 const AudioSpinner = (props) => {
     const mergedProps = (0, solid_js_1.mergeProps)(props);
@@ -20,4 +21,4 @@ const AudioSpinner = (props) => {
       </g>
     </svg>);
 };
-exports.default = AudioSpinner;
+exports.AudioSpinner = AudioSpinner;

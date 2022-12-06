@@ -1,5 +1,6 @@
 "use strict";
 Object.defineProperty(exports, "__esModule", { value: true });
+exports.TailSpin = void 0;
 const solid_js_1 = require("solid-js");
 const TailSpin = (props) => {
     const mergedProps = (0, solid_js_1.mergeProps)(props);
@@ -23,4 +24,4 @@ const TailSpin = (props) => {
       </g>
     </svg>);
 };
-exports.default = TailSpin;
+exports.TailSpin = TailSpin;

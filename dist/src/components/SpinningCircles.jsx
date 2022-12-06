@@ -1,5 +1,6 @@
 "use strict";
 Object.defineProperty(exports, "__esModule", { value: true });
+exports.SpinningCircles = void 0;
 const solid_js_1 = require("solid-js");
 const SpinningCircles = (props) => {
     const mergedProps = (0, solid_js_1.mergeProps)(props);
@@ -34,4 +35,4 @@ const SpinningCircles = (props) => {
       </g>
     </svg>);
 };
-exports.default = SpinningCircles;
+exports.SpinningCircles = SpinningCircles;

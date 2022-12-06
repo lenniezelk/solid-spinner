@@ -1,5 +1,6 @@
 "use strict";
 Object.defineProperty(exports, "__esModule", { value: true });
+exports.Rings = void 0;
 const solid_js_1 = require("solid-js");
 const Rings = (props) => {
     const mergedProps = (0, solid_js_1.mergeProps)(props);
@@ -21,4 +22,4 @@ const Rings = (props) => {
       </g>
     </svg>);
 };
-exports.default = Rings;
+exports.Rings = Rings;

@@ -1,5 +1,6 @@
 "use strict";
 Object.defineProperty(exports, "__esModule", { value: true });
+exports.BallTriangle = void 0;
 const solid_js_1 = require("solid-js");
 const BallTriangle = (props) => {
     const mergedProps = (0, solid_js_1.mergeProps)(props);
@@ -22,4 +23,4 @@ const BallTriangle = (props) => {
       </g>
     </svg>);
 };
-exports.default = BallTriangle;
+exports.BallTriangle = BallTriangle;

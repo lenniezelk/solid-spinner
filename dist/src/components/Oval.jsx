@@ -1,5 +1,6 @@
 "use strict";
 Object.defineProperty(exports, "__esModule", { value: true });
+exports.Oval = void 0;
 const solid_js_1 = require("solid-js");
 const Oval = (props) => {
     const mergedProps = (0, solid_js_1.mergeProps)(props);
@@ -14,4 +15,4 @@ const Oval = (props) => {
       </g>
     </svg>);
 };
-exports.default = Oval;
+exports.Oval = Oval;

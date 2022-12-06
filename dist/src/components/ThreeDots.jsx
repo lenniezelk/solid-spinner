@@ -1,5 +1,6 @@
 "use strict";
 Object.defineProperty(exports, "__esModule", { value: true });
+exports.ThreeDots = void 0;
 const solid_js_1 = require("solid-js");
 const ThreeDots = (props) => {
     const mergedProps = (0, solid_js_1.mergeProps)(props);
@@ -18,4 +19,4 @@ const ThreeDots = (props) => {
       </circle>
     </svg>);
 };
-exports.default = ThreeDots;
+exports.ThreeDots = ThreeDots;

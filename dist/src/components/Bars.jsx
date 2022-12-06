@@ -1,5 +1,6 @@
 "use strict";
 Object.defineProperty(exports, "__esModule", { value: true });
+exports.Bars = void 0;
 const solid_js_1 = require("solid-js");
 const Bars = (props) => {
     const mergedProps = (0, solid_js_1.mergeProps)(props);
@@ -26,4 +27,4 @@ const Bars = (props) => {
       </rect>
     </svg>);
 };
-exports.default = Bars;
+exports.Bars = Bars;
