@@ -11,11 +11,11 @@ describe('<BallTriangle />', () => {
 
     // act
     const svg = await screen.findByRole('img');
-    let width = svg.getAttribute('width');
-    let height = svg.getAttribute('height');
-    let class_ = svg.getAttribute('class');
-    let viewBox = svg.getAttribute('viewBox');
-    let testName = svg.getAttribute('data-test-name');
+    const width = svg.getAttribute('width');
+    const height = svg.getAttribute('height');
+    const class_ = svg.getAttribute('class');
+    const viewBox = svg.getAttribute('viewBox');
+    const testName = svg.getAttribute('data-test-name');
 
     // assert
     expect(width).toBe('57');
@@ -39,11 +39,11 @@ describe('<BallTriangle />', () => {
 
     // act
     const svg = await screen.findByRole('img');
-    let width = svg.getAttribute('width');
-    let height = svg.getAttribute('height');
-    let viewBox = svg.getAttribute('viewBox');
-    let class_ = svg.getAttribute('class');
-    let style = svg.getAttribute('style');
+    const width = svg.getAttribute('width');
+    const height = svg.getAttribute('height');
+    const viewBox = svg.getAttribute('viewBox');
+    const class_ = svg.getAttribute('class');
+    const style = svg.getAttribute('style');
 
     // assert
     expect(width).toBe('50');
