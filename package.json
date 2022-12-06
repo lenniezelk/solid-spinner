@@ -4,7 +4,8 @@
   "description": "Loading spinners for SolidJS",
   "main": "index.js",
   "scripts": {
-    "test": "vitest"
+    "test": "vitest",
+    "build": "tsc"
   },
   "keywords": [
     "solid",
