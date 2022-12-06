@@ -1,8 +1,8 @@
 {
   "name": "solid-spinner",
   "version": "0.1.0",
-  "description": "Loading spinners for SolidJS",
-  "main": "index.js",
+  "description": "Pure SVG loading spinners for SolidJS",
+  "main": "./dist/index.js",
   "scripts": {
     "test": "vitest",
     "build": "tsc",
@@ -15,7 +15,7 @@
     "svg"
   ],
   "author": "Leonard Kioi",
-  "license": "ISC",
+  "license": "MIT",
   "peerDependencies": {
     "solid-js": "*"
   },
@@ -33,5 +33,9 @@
   },
   "engines": {
     "node": ">=16"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/lenniezelk/solid-spinner.git"
   }
 }
