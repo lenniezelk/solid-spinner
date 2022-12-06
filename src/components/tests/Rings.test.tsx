@@ -34,6 +34,7 @@ describe('<Rings />', () => {
         class="spinner"
         style={{ margin: '10px' }}
         type={SpinnerType.rings}
+        color="red"
       />
     ));
 
@@ -44,6 +45,7 @@ describe('<Rings />', () => {
     const viewBox = svg.getAttribute('viewBox');
     const class_ = svg.getAttribute('class');
     const style = svg.getAttribute('style');
+    const color = svg.getAttribute('color');
 
     // assert
     expect(width).toBe('50');
@@ -51,5 +53,6 @@ describe('<Rings />', () => {
     expect(viewBox).toBe('0 0 45 45');
     expect(class_).toBe('spinner');
     expect(style).toBe('margin: 10px;');
+    expect(color).toBe('red');
   });
 });

@@ -34,6 +34,7 @@ describe('<ThreeDots />', () => {
         class="spinner"
         style={{ margin: '10px' }}
         type={SpinnerType.threeDots}
+        color="red"
       />
     ));
 
@@ -44,6 +45,7 @@ describe('<ThreeDots />', () => {
     const viewBox = svg.getAttribute('viewBox');
     const class_ = svg.getAttribute('class');
     const style = svg.getAttribute('style');
+    const color = svg.getAttribute('color');
 
     // assert
     expect(width).toBe('50');
@@ -51,5 +53,6 @@ describe('<ThreeDots />', () => {
     expect(viewBox).toBe('0 0 120 30');
     expect(class_).toBe('spinner');
     expect(style).toBe('margin: 10px;');
+    expect(color).toBe('red');
   });
 });

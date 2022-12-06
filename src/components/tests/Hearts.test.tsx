@@ -34,6 +34,7 @@ describe('<Hearts />', () => {
         class="spinner"
         style={{ margin: '10px' }}
         type={SpinnerType.hearts}
+        color="red"
       />
     ));
 
@@ -44,6 +45,7 @@ describe('<Hearts />', () => {
     const viewBox = svg.getAttribute('viewBox');
     const class_ = svg.getAttribute('class');
     const style = svg.getAttribute('style');
+    const color = svg.getAttribute('color');
 
     // assert
     expect(width).toBe('50');
@@ -51,5 +53,6 @@ describe('<Hearts />', () => {
     expect(viewBox).toBe('0 0 140 64');
     expect(class_).toBe('spinner');
     expect(style).toBe('margin: 10px;');
+    expect(color).toBe('red');
   });
 });

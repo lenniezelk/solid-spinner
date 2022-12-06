@@ -1,5 +1,5 @@
 import { afterEach, describe, expect, test } from 'vitest';
-import { render, fireEvent, screen, cleanup } from 'solid-testing-library';
+import { render, screen, cleanup } from 'solid-testing-library';
 import Spinner from '../Spinner';
 import { SpinnerType } from '../../types';
 
@@ -34,6 +34,7 @@ describe('<BallTriangle />', () => {
         class="spinner"
         style={{ margin: '10px' }}
         type={SpinnerType.ballTriangle}
+        color="red"
       />
     ));
 
@@ -44,6 +45,7 @@ describe('<BallTriangle />', () => {
     const viewBox = svg.getAttribute('viewBox');
     const class_ = svg.getAttribute('class');
     const style = svg.getAttribute('style');
+    const color = svg.getAttribute('color');
 
     // assert
     expect(width).toBe('50');
@@ -51,5 +53,6 @@ describe('<BallTriangle />', () => {
     expect(viewBox).toBe('0 0 57 57');
     expect(class_).toBe('spinner');
     expect(style).toBe('margin: 10px;');
+    expect(color).toBe('red');
   });
 });
