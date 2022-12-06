@@ -1,12 +1,12 @@
 import { JSX } from 'solid-js';
 
-export type SpinnerProps = {
+export interface SpinnerProps extends JSX.SvgSVGAttributes<SVGSVGElement> {
   width?: string | number;
   height?: string | number;
   type?: SpinnerType;
   class?: string;
   style?: JSX.CSSProperties;
-};
+}
 
 export enum SpinnerType {
   audio = 'audio',
