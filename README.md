@@ -1,15 +1,17 @@
 # [WIP] Solid Spinner
 
+**Warning** Under active development. Do not use in production.
+
 Dependency free [SolidJS](https://solidjs.com) adaptation of Sam Herberts [SVG Loaders](https://github.com/SamHerbert/SVG-Loaders) library.
 
 ## ✨ Features
 
 - [12 Spinners](#-included-icons-pack) totally ready to use.
-- Tree shakeable: What you take is what you get.
 - [Customizable](#%EF%B8%8F-configuration) - receive props to extend their usefulness.
+- First class TypeScript support
+- Tree shakeable: What you take is what you get.
 - [Reactivity](https://www.youtube.com/watch?v=J70HXl1KhWE), take advantage of SolidJS to react to changes in props.
 - [Just import and declare](#usage) in your JSX to work out-the-box
-- First class TypeScript support
 
 ## 📦 Installation
 
