@@ -1,6 +1,7 @@
 # [WIP] Solid Spinner
 
-**Warning** Under active development. Do not use in production.
+> **Warning**
+> Under active development. Do not use in production.
 
 Dependency free [SolidJS](https://solidjs.com) adaptation of Sam Herberts [SVG Loaders](https://github.com/SamHerbert/SVG-Loaders) library.
 
