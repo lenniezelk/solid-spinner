@@ -2,7 +2,7 @@
   "name": "solid-spinner",
   "version": "0.1.1",
   "description": "Pure SVG loading spinners for SolidJS",
-  "main": "./dist/index.js",
+  "main": "index.js",
   "scripts": {
     "test": "vitest",
     "build": "tsc",
