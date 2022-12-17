@@ -1,6 +1,6 @@
 {
   "name": "solid-spinner",
-  "version": "0.1.5",
+  "version": "0.1.6",
   "description": "Pure SVG loading spinners for SolidJS",
   "main": "./dist/esm/index.js",
   "scripts": {
