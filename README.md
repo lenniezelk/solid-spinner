@@ -2,6 +2,8 @@
 
 Dependency free [SolidJS](https://solidjs.com) adaptation of Sam Herberts [SVG Loaders](https://github.com/SamHerbert/SVG-Loaders) library.
 
+:purple_heart: [View Spinners](https://solid-spinner-demo.pages.dev/)
+
 ## ✨ Features
 
 - [12 Spinners](#spinners) totally ready to use.
