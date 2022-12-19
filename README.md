@@ -1,7 +1,4 @@
-# [WIP] Solid Spinner
-
-> **Warning**
-> Under active development. Do not use in production.
+# Solid Spinner
 
 Dependency free [SolidJS](https://solidjs.com) adaptation of Sam Herberts [SVG Loaders](https://github.com/SamHerbert/SVG-Loaders) library.
 
@@ -82,4 +79,27 @@ Each of these components should be able to accept any [SVG tag presentation attr
 
 // render the Puff loader with a stroke of mint green and a stroke opactiy of .125
 <Puff stroke="#98ff98" stroke-opacity=".125"/>
+```
+
+## Development
+
+```bash
+# clone repo
+git clone git@github.com:lenniezelk/solid-spinner.git
+# cd into project directory
+cd solid-spinner
+# install packages
+pnpm install
+```
+
+### Test
+
+```bash
+pnpm test
+```
+
+### Build for production
+
+```bash
+pnpm build
 ```
